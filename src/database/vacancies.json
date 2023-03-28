@@ -1,0 +1,25 @@
+{
+  "Jobs": [
+    {
+      "id": "6264757",
+      "title": "Senior Advertising Account Manager",
+      "description": "Senior Advertising Account Manager based in our Richmond office, full-time permanent role.",
+      "location": "Melbourne",
+      "closingDate": "2023-3-12"
+    },
+    {
+      "id": "6264755",
+      "title": "Administration Assistant",
+      "description": "Senior Advertising Account Manager based in our Richmond office, full-time permanent role.",
+      "location": "Auckland",
+      "closingDate": "2023-3-15"
+    },
+    {
+      "id": "6234855",
+      "title": "Another Example Role",
+      "description": "This is a part-time position with flexible work arrangements, the opportunity to visit and work from our other offices and feel supported in your role, every day!",
+      "location": "Sydney",
+      "closingDate": "2023-3-25"
+    }
+  ]
+}

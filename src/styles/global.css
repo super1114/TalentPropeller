@@ -1,0 +1,14 @@
+@tailwind base;
+
+body {
+  margin: 0;
+  background-color: #E4E4E4;
+  font-family: Montserrat;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
