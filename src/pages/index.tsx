@@ -5,7 +5,6 @@ import JumbotronExtra from "@/components/home/JumbotronExtra";
 import Partnership from "@/components/home/Partnership";
 import Showcase from "@/components/home/Showcase";
 
-
 export default function Home() {
   return (
     <div>

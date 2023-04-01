@@ -1,26 +1,22 @@
-import { useState } from 'react';
+/* eslint-disable unused-imports/no-unused-imports */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
+import { useState } from "react";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import navConfig from '@/config/nav.config';
+import { AiOutlineSearch } from "react-icons/ai";
+import navConfig from "@/config/nav.config";
+import { Button } from "@nextui-org/react";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
     <header>
-      <nav className="flex flex-wrap justify-between items-center px-4 w-full text-lg text-white bg-primary md:py-0">
-        <div>
-          <Link href="/" passHref>
-            <img
-              alt="logo"
-              src="/logo.png"
-              className="h-[64px] hover:cursor-pointer"
-            />
-          </Link>
-        </div>
-        <div className="lg:hidden">
+      <nav className="flex flex-wrap justify-between items-center px-3 w-full text-lg text-white bg-primary md:py-0">
+        <div className="block lg:hidden">
           <button
-            className="p-2 text-gray-700 rounded-md focus:border focus:border-gray-400 outline-none"
+            className="p-2 text-white rounded-md focus:border focus:border-gray-400 outline-none"
             onClick={() => setNavbar(!navbar)}
           >
             {navbar ? (
@@ -54,9 +50,23 @@ export default function Header() {
             )}
           </button>
         </div>
+        <div className="flex justify-center items-center">
+          <Link href="/" passHref>
+            <img
+              alt="logo"
+              src="/logo.png"
+              className="object-cover hover:cursor-pointer mp:h-[64px] sm:h-[80px] md:h-[88px] lg:h-[92px]"
+            />
+          </Link>
+        </div>
+        <div className="flex justify-center items-center lg:hidden">
+          <button className="text-3xl">
+            <AiOutlineSearch />
+          </button>
+        </div>
         <div
           className={`w-full text-white lg:flex lg:w-auto lg:items-center ${
-            navbar ? '' : 'hidden'
+            navbar ? "" : "hidden"
           }`}
         >
           <ul className="md:flex md:justify-between md:pt-0">
@@ -66,7 +76,9 @@ export default function Header() {
                 className="flex justify-center px-4 mr-1 rounded-full border border-transparent hover:border-white cursor-pointer select-none"
               >
                 <Link href={navItem.link} passHref>
-                  {navItem.label}
+                  <button onClick={() => setNavbar(false)}>
+                    {navItem.label}
+                  </button>
                 </Link>
               </li>
             ))}

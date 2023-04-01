@@ -1,69 +1,80 @@
+/* eslint-disable prettier/prettier */
 const Showcase = () => {
   return (
-    <section className="grid grid-cols-1 gap-0 md:grid-cols-2">
-      <div className="py-16 bg-primary md:py-32">
+    <section className="grid grid-cols-1 gap-0 lg:grid-cols-2">
+      <div className="flex flex-col justify-center items-center p-8 bg-primary mp:p-10 sm:p-12 lg:p-10 xl:p-20">
+        <div>
+          <img
+            className="object-cover w-full h-full"
+            src="/assets/images/home/icon-people.png"
+            alt="icon-people"
+          />
+        </div>
+        <div className="items-center mt-[20px] sm:flex">
+          <div>
+            <h2 className="font-bold text-center text-white mp:text-4xl sm:ml-3 sm:text-5xl sm:text-left lg:text-3xl xl:text-4xl">
+              13,000+
+            </h2>
+          </div>
+          <div className=" text-white sm:ml-5">
+            <p className="font-extrabold mp:text-xl mp:text-center sm:text-3xl lg:text-2xl xl:text-2xl">
+              candidates visit our platforms every month
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center p-16 bg-secondary-grey mp:p-10 sm:p-12 lg:p-10 xl:p-20">
+        <div>
+          <img
+            className="object-cover w-full h-full"
+            src="assets/images/home/icon-job-ads.png"
+            alt="icon-job-ads"
+          />
+        </div>
+        <div className="items-center mt-8 sm:flex">
+          <div>
+            <h2 className="font-bold text-center text-white mp:text-4xl sm:ml-3 sm:text-5xl sm:text-left lg:text-3xl xl:text-4xl">
+              4,000+
+            </h2>
+          </div>
+          <div className="mb-5 text-white sm:ml-[20px]">
+            <p className="font-extrabold mp:text-xl mp:text-center sm:text-3xl lg:text-2xl xl:text-2xl">
+              job ads placed every month
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center mx-auto w-2/3 h-2/3 sm:w-full sm:h-full">
         <img
-          className="px-8"
-          src="/assets/images/home/icon-people.png"
+          src="/assets/images/home/placeholder.png"
           alt="icon-people"
+          className="object-cover"
         />
-        <div className="flex flex-row justify-center items-center px-16 mt-8">
-          <h2 className="float-right px-8 text-6xl font-bold text-white">
-            13,000+
-          </h2>
-          <div className="float-left px-8 text-white">
-            <p className="text-2xl">
-              candidates visit our
-              <br />
-              platforms every month
-            </p>
-          </div>
-        </div>
       </div>
-      <div className="py-16 bg-secondary-grey md:py-32">
-        <img
-          className="py-16 px-8 md:pb-8"
-          src="assets/images/home/icon-job-ads.png"
-          alt="icon-job-ads"
-        />
-        <div className="flex flex-row justify-center items-center px-16 mt-8">
-          <h2 className="float-right px-8 text-6xl font-bold text-white">
-            4,000+
-          </h2>
-          <div className="float-left px-8 text-white">
-            <p className="text-2xl">
-              job ads placed
-              <br />
-              every month
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="py-16 bg-center bg-no-repeat bg-cover md:py-32"
-        style={{
-          backgroundImage: `url('/assets/images/home/placeholder.png')`,
-        }}
-      >
-        <div className="flex flex-row justify-center items-center py-32 px-16">
-          <h2 className="float-right px-8 text-5xl text-white">Placeholder</h2>
-        </div>
-      </div>
-      <div className="p-16 text-white bg-primary md:py-32">
-        <div className="py-16 mx-auto max-w-xl text-left">
-          <h1 className="text-4xl font-bold">
-            If you’re serious about finding good talent, don’t delay
+      <div className="flex flex-col justify-center p-8 text-white sm:p-12 md:p-24 lg:p-16 xl:p-20">
+        <div>
+          <h1 className="text-base font-bold text-center text-secondary-grey sm:text-5xl sm:text-left lg:text-3xl xl:text-4xl">
+            Let’s not muck around
           </h1>
-          <p className="pr-20 mt-8 text-2xl">
-            There’s a lot of competition for top quality candidates! Call us
-            today to find out how we can help your recruitment strategy.
+        </div>
+        <div>
+          <p className="py-4 text-sm text-center text-black sm:text-3xl sm:text-left lg:text-xl xl:text-2xl">
+            With a shortage of candidates out there, you’ve got be clever, and
+            you’ve got to be quick. We like seeing our clients succeed from
+            hiring great people, due to a robust, successful recruitment
+            strategy. We’re driven by innovation and passionate about shaking
+            things up. But more about us later.
           </p>
-
-          <div className="flex flex-wrap gap-4 mt-8 text-center">
-            <button className="block py-3 px-12 w-full text-lg font-bold text-center text-white bg-secondary-grey rounded-full focus:outline-none focus:ring shadow sm:w-auto text-rose-600 hover:text-rose-700 active:text-rose-500">
-              Call Now
-            </button>
-          </div>
+        </div>
+        <div className="pb-10 text-black">
+          <h1 className="text-[18px] text-center sm:text-4xl sm:text-left md:text-4xl lg:text-2xl xl:text-3xl">
+            If you’re serious about finding good talent, call us
+          </h1>
+        </div>
+        <div className="flex justify-center sm:justify-start">
+          <button className="py-2 px-10 font-bold text-center text-white bg-primary rounded-full focus:outline-none focus:ring shadow sm:text-3xl sm:bg-secondary-grey lg:text-xl xl:text-2xl text-rose-600 hover:text-rose-700 active:text-rose-500">
+            Call Now
+          </button>
         </div>
       </div>
     </section>

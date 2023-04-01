@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Meta from '@/layout/Meta';
+import Meta from "@/layout/Meta";
 
-import Footer from './Footer';
-import Header from './Header';
+import Footer from "./Footer";
+import Header from "./Header";
 
 type Props = {
   children: any;
@@ -11,7 +11,7 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div className="min-w-[640px]">
+    <div>
       <Meta />
       <Header />
       {children}

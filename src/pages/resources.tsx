@@ -1,34 +1,23 @@
-import { useState, useEffect } from 'react';
+/* eslint-disable prettier/prettier */
+// import { useState, useEffect } from "react";
 
-import axios from 'axios';
+// import axios from "axios";
 
-import BlogList from '@/components/resources/BlogList';
-import Download from '@/components/resources/Download';
-import ResourceJumbotron from '@/components/resources/ResourceJumbotron';
-import { server } from '@/config';
-import Meta from '@/layout/Meta';
+import BlogList from "@/components/resources/BlogList";
+import Download from "@/components/resources/Download";
+import ResourceJumbotron from "@/components/resources/ResourceJumbotron";
+// import { server } from '@/config';
+import Meta from "@/layout/Meta";
 
-const Resources = () => {
-  const [blogs, setBlogs] = useState([]);
-
-  const initData = async () => {
-    const res = await axios.get(`${server}/api/posts/getDashboardBlogs`);
-    setBlogs(res.data);
-  };
-
-  useEffect(() => {
-    initData();
-  }, []);
-  // console.log(blogs);
-  return (
-    <div>
-      <Meta title="Talent Propeller - Resources" />
-      <ResourceJumbotron />
-      <Download />
-      <BlogList blogs={blogs} />
-    </div>
-  );
-};
+const Resources = () => (
+  /* const [blogs, setBlogs] = useState([]);*/ /* const initData = async () => {*/ /*   const res = await axios.get(`${server}/api/posts/getDashboardBlogs`);*/ /*   setBlogs(res.data);*/ /* };*/ /* useEffect(() => {*/ /*   initData();*/ /* }, []);*/ /* console.log(blogs);*/ <div>
+    <Meta title="Talent Propeller - Resources" />
+    <ResourceJumbotron />
+    <Download />
+    {/* <BlogList blogs={blogs} /> */}
+    {/* <BlogList /> */}
+  </div>
+);
 
 // export async function getStaticProps() {
 //   const filePath = path.join(process.cwd(), 'src/database/data.json');

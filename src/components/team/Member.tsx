@@ -1,4 +1,5 @@
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+/* eslint-disable prettier/prettier */
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const Member = ({
   memberInfo,
@@ -8,11 +9,11 @@ const Member = ({
   handleViewMember: any;
 }) => {
   return (
-    <div className="items-center py-16 px-8 m-auto text-center hover:border-2 hover:border-tango-500 shadow-2xl">
+    <div className="overflow-y-auto py-16 px-8 w-full min-h-[800px] max-h-[800px] text-center bg-white hover:border-2 hover:border-tango-500 shadow-2xl">
       <img
         src="/assets/images/team/member2.png"
         alt="member-card"
-        className="items-center mx-auto mb-10 rounded-full border-2 border-tango-500"
+        className="aspect-square items-center mx-auto mb-10 rounded-full border-2 border-tango-500"
       />
       <label className="text-2xl text-center">First Lastname</label>
       <div className="my-10">
@@ -35,14 +36,12 @@ const Member = ({
         <i>Creative Director</i>
       </h5>
       <div className="flex justify-center items-center">
-        <FaFacebookF
-          size={24}
-          className="mx-3 text-white bg-tango-500 rounded-full border hover:border-2 hover:border-solid hover:border-slate-800"
-        />
-        <FaLinkedinIn
-          size={24}
-          className="mx-3 text-white bg-tango-500 rounded-full border hover:border-2 hover:border-solid hover:border-slate-800"
-        />
+        <div className="flex justify-center items-center mr-2 w-8 h-8 text-center text-white bg-tango-500 rounded-full border hover:border-2 hover:border-solid hover:border-slate-800">
+          <FaFacebookF size={24} />
+        </div>
+        <div className="flex justify-center items-center w-8 h-8 text-center text-white bg-tango-500 rounded-full border hover:border-2 hover:border-solid hover:border-slate-800">
+          <FaLinkedinIn size={24} />
+        </div>
       </div>
     </div>
   );

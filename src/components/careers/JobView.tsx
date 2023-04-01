@@ -16,11 +16,11 @@ const JobView = ({ job }: { job: TJobType }) => {
           </a>
         </Link>
       </div>
-      <div className="mb-5">
-        <button className="py-2 px-10 mx-5 w-64 text-xl text-white hover:text-gray-900 bg-tango-500 hover:bg-white rounded-full drop-shadow-lg duration-300">
+      <div className="flex flex-col justify-center items-center mb-3 md:flex-row md:justify-start">
+        <button className=" justify-center py-2 px-10 m-5 w-64 text-xl text-white hover:text-gray-900 bg-tango-500 hover:bg-white rounded-full drop-shadow-lg duration-300">
           Full-time
         </button>
-        <button className="py-2 px-8 mx-16 w-64 text-xl text-tango-500 hover:text-white bg-white hover:bg-tango-500 rounded-full border-2 border-tango-500 drop-shadow-lg duration-300">
+        <button className="py-2 px-8 m-3 w-64 text-xl text-tango-500 hover:text-white bg-white hover:bg-tango-500 rounded-full border-2 border-tango-500 drop-shadow-lg duration-300">
           Staff Benefits
         </button>
       </div>

@@ -1,16 +1,24 @@
-import React from 'react';
+/* eslint-disable prettier/prettier */
+import React from "react";
 
 const Advertise = () => {
   return (
     <section>
-      <div className="flex flex-col-reverse text-white bg-primary md:flex-row">
-        <div className="flex-1 justify-between items-center p-12 m-auto">
-          <div className="m-auto max-w-xl">
-            <p className="py-5 text-3xl">
+      <div className="grid grid-cols-1 text-white lg:grid-cols-2">
+        <div className="block w-full lg:hidden">
+          <img
+            src="/assets/images/career/sharon.png"
+            alt="sharon.png"
+            className="object-cover w-full h-full"
+          ></img>
+        </div>
+        <div className="flex flex-col justify-center bg-primary mp:py-6 mp:px-8 mp:text-center sm:p-12 sm:text-left">
+          <div>
+            <p className="pb-5 mp:text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
               We hire ambitious individuals for recruitment, account management
               and business development roles.
             </p>
-            <p className="py-5 text-2xl">
+            <p className="pt-5 mp:text-base sm:text-xl lg:text-2xl xl:text-3xl">
               In our offices there is a lot of banter, singing, laughter, but
               also deadlines, focus and determination to be the best we possibly
               can be. We work hard and play hard and believe to be truly
@@ -18,24 +26,29 @@ const Advertise = () => {
             </p>
           </div>
         </div>
-        <div
-          className="flex-1 py-64 px-12 bg-center bg-no-repeat bg-cover"
-          style={{
-            backgroundImage: `url('/assets/images/career/sharon.png')`,
-          }}
-        ></div>
+        <div className="hidden lg:block">
+          <img
+            src="/assets/images/career/sharon.png"
+            alt="sharon.png"
+            className="object-cover w-full h-full"
+          ></img>
+        </div>
       </div>
-      <div className="flex flex-col text-white bg-secondary-grey md:flex-row">
-        <div
-          className="flex-1 py-64 px-12 bg-center bg-no-repeat bg-cover"
-          style={{
-            backgroundImage: `url('/assets/images/career/victoria.png')`,
-          }}
-        ></div>
-        <div className="flex-1 justify-between items-center p-12 m-auto">
-          <div className="m-auto max-w-xl">
-            <p className="py-5 text-3xl">Here you are valued and rewarded.</p>
-            <p className="py-5 text-2xl">
+      <div className="grid grid-cols-1 text-white lg:grid-cols-2">
+        <div>
+          <img
+            src="/assets/images/career/victoria.png"
+            alt="victoria.png"
+            className="object-cover w-full h-full"
+          />
+        </div>
+        <div className="flex flex-col justify-center bg-primary mp:py-6 mp:px-8 mp:text-center sm:p-12 sm:text-left">
+          <div>
+            <p className="pb-5 mp:text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
+              We hire ambitious individuals for recruitment, account management
+              and business development roles.
+            </p>
+            <p className="pt-5 mp:text-base sm:text-xl lg:text-2xl xl:text-3xl">
               We won’t beat around the bush - we work hard, and being in an
               agency environment means there is occasional overtime and really
               busy days, but in return, we believe in rewarding our staff and

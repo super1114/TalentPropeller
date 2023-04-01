@@ -1,59 +1,64 @@
+/* eslint-disable prettier/prettier */
+
 const JumbotronExtra = () => {
   return (
-    <section
-      className="overflow-hidden relative bg-right bg-no-repeat bg-cover lg:bg-center"
-      style={{
-        backgroundImage: `url('/assets/images/home/jumbotron-extra.jpg')`,
-      }}
-    >
-      <div className="absolute inset-0"></div>
-
-      <div className="items-center py-32 px-8 mx-auto max-w-screen-xl text-primary sm:px-6 lg:flex lg:relative lg:px-4 lg:h-screen">
-        <div className="px-8 max-w-xl sm:pl-2 sm:text-left">
-          <h1 className="text-3xl sm:text-4xl">
-            Three ways we help you
-            <br />
-            solve your talent challenges:
+    <section className="grid grid-cols-1 gap-0 lg:grid-cols-2">
+      <div className="block sm:hidden">
+        <img
+          src="/assets/images/home/jumbotron-extra-mobile.png"
+          alt="jumbotron-extra"
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="p-5 mp:px-5 sm:px-10 sm:text-primary lg:flex lg:relative lg:p-[76px] xl:p-16">
+        <div className="flex flex-col">
+          <h1 className="font-bold text-secondary-grey mp:text-[18px] mp:text-center sm:text-3xl sm:text-center lg:text-4xl xl:text-5xl">
+            Three ways we help you solve your talent challenges:
           </h1>
           <div className="flex items-center mt-8">
             <img
-              className="block h-18 w-18"
-              src="/assets/images/home/icon-megaphone.png"
+              src="/assets/images/home/TP Mobile - Service - Hope.png"
               alt="megaphone-icon"
+              className="object-cover w-[72px] h-[72px] sm:w-[144px] sm:h-[144px]"
             />
             <div className="ml-8">
-              <h2 className="mt-4 text-2xl sm:text-3xl">
-                Innovative, cost-effective
-                <br />
-                advertising strategies that work
+              <h2 className="sm:text-2xl lg:text-2xl xl:text-4xl">
+                Innovative, cost-effective advertising strategies that work
               </h2>
             </div>
           </div>
           <div className="flex items-center mt-8">
             <img
-              className="block h-18 w-18"
-              src="/assets/images/home/icon-shortlist.png"
+              src="/assets/images/home/TP Mobile - Service - Seek.png"
               alt="shortlist-icon"
+              className="object-cover w-[72px] h-[72px] sm:w-[144px] sm:h-[144px]"
             />
             <div className="ml-8">
-              <h2 className="text-2xl sm:text-3xl">
+              <h2 className="sm:text-2xl lg:text-2xl xl:text-4xl">
                 Shortlist faster with no placement fees
               </h2>
             </div>
           </div>
           <div className="flex items-center mt-8">
             <img
-              className="block h-18 w-18"
-              src="/assets/images/home/icon-skilltest.png"
+              src="/assets/images/home/TP Mobile - Service - Copy.png"
               alt="skilltest-icon"
+              className="object-cover w-[72px] h-[72px] sm:w-[144px] sm:h-[144px]"
             />
             <div className="ml-8">
-              <h2 className="text-2xl sm:text-3xl">
+              <h2 className="sm:text-2xl lg:text-2xl xl:text-4xl">
                 Advanced skills testing options
               </h2>
             </div>
           </div>
         </div>
+      </div>
+      <div className="hidden sm:block">
+        <img
+          src="/assets/images/home/jumbotron-extra.png"
+          alt="jumbotron-extra"
+          className="object-cover w-full h-full"
+        />
       </div>
     </section>
   );

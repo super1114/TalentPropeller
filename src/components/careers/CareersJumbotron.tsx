@@ -1,30 +1,48 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable jsx-a11y/alt-text */
+
 const CareersJumbotron = () => {
   return (
-    <div
-      className="overflow-hidden relative bg-right bg-no-repeat bg-cover lg:bg-center"
-      style={{
-        backgroundImage: `url('/assets/images/career/masthead - header.jpg')`,
-      }}
-    >
+    <section className="relative w-full">
       <div className="absolute inset-0"></div>
-
-      <div className="float-left relative py-32 px-16 mx-auto max-w-screen-xl text-white sm:px-6 lg:flex lg:items-center lg:px-32 lg:h-screen">
-        <div className="max-w-xl">
-          <h1 className="text-5xl">
-            <b>Join an ambitious and talented team</b>
-          </h1>
-          <h2 className="right-5 bottom-5 py-5 text-3xl">
-            Be supported to go anywhere.
-          </h2>
-          <p className="text-xl">
-            We genuinely believe that the opportunities here are endless. When
-            you start here, you can go anywhere. We work as a team, we get
-            involved, roll up our sleeves and make things happen. When we put
-            our minds to something, there is no stopping us.
-          </p>
+      <img
+        src="/assets/images/home/jumbotron.png"
+        className="hidden object-cover w-full h-full sm:block"
+      />
+      <img
+        src="/assets/images/home/jumbotron_mobile.png"
+        className="block object-cover w-full h-full sm:hidden"
+      />
+      <div className="flex inset-0 items-center lg:absolute lg:justify-end lg:px-[50px] xl:px-[100px]">
+        <div className="justify-center text-black lg:flex lg:justify-end lg:items-center lg:text-white">
+          <div className="text-center lg:pt-16 lg:max-w-[40%]">
+            <div>
+              <h1 className="px-10 pt-4 font-bold text-white bg-secondary mp:text-[22px] sm:px-[50px] sm:text-2xl md:text-4xl lg:relative lg:p-0 lg:text-[30px] lg:text-left lg:bg-transparent xl:text-[40px] mp:text-">
+                Join an ambitious and talented team
+              </h1>
+            </div>
+            <div className="p-5 text-white bg-secondary lg:p-0 lg:bg-transparent">
+              <h2 className="mp:text-[20px] sm:text-[20px] md:text-[28px] lg:text-2xl lg:text-left xl:text-[30px]">
+                There’s a better way to find talent for your business
+              </h2>
+            </div>
+            <div>
+              <p className="mp:p-4 mp:text-base sm:p-8 sm:text-base md:text-2xl lg:p-0 lg:text-base lg:leading-relaxed lg:text-left xl:text-[20px]">
+                We genuinely believe that the opportunities here are endless.
+                When you start here, you can go anywhere. We work as a team, we
+                get involved, roll up our sleeves and make things happen. When
+                we put our minds to something, there is no stopping us.
+              </p>
+            </div>
+            <div className="flex justify-center mb-8 sm:text-xl lg:justify-start lg:py-8">
+              <button className="py-3 px-4 font-bold text-center text-white bg-secondary rounded-full focus:outline-none focus:ring shadow md:px-12 text-rose-600 hover:text-rose-700 active:text-rose-500">
+                Get in Touch
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

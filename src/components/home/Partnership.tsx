@@ -1,63 +1,61 @@
-import React from 'react';
-
 const Partnership = () => {
   return (
-    <section className="py-24 text-white bg-secondary">
-      <div className="flex justify-center mx-auto max-w-screen-xl text-white">
-        <h1 className="text-5xl font-bold text-center">
+    <section className="py-6 text-white bg-secondary mp:py-10 sm:py-16">
+      <div className="flex justify-center px-4 pb-8 text-white">
+        <h1 className="font-bold text-center mp:text-xl sm:text-4xl xl:text-5xl">
           These businesses already use our talent services:
         </h1>
       </div>
-      <div className="grid grid-cols-2 px-16 md:grid-cols-5">
+      <div className="grid justify-center items-center mp:grid-cols-4 mp:px-4 sm:px-16 md:grid-cols-3 xl:grid-cols-4">
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-alsco.png"
+          src="/assets/images/home/logo-alsco-mobile.png"
           alt="alsco"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-power.png"
+          src="/assets/images/home/logo-power-mobile.png"
           alt="power"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-bonneys.png"
+          src="/assets/images/home/logo-bonneys-mobile.png"
           alt="bonneys"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-finance.png"
+          src="/assets/images/home/TP Mobile - Logo - Instant Finance - mobile.png"
           alt="finance"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-dtkings.png"
+          src="/assets/images/home/logo-dtkings-mobile.png"
           alt="dtkings"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-napier.png"
+          src="/assets/images/home/logo-napier-mobile.png"
           alt="napier"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-comet.png"
+          src="/assets/images/home/logo-comet-mobile.png"
           alt="comet"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-ribon.png"
+          src="/assets/images/home/logo-ribon-mobile.png"
           alt="ribon"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-8 pb-16 md:pb-8"
-          src="/assets/images/home/logo-soho.png"
+          src="/assets/images/home/logo-soho-mobile.png"
           alt="soho"
+          className="object-cover p-2"
         />
         <img
-          className="px-8 pt-4 pb-16 md:pb-8"
-          src="/assets/images/home/logo-hwr.png"
+          src="/assets/images/home/logo-hwr-mobile.png"
           alt="hwr"
+          className="object-cover p-2"
         />
       </div>
     </section>

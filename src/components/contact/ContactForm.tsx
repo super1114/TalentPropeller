@@ -1,10 +1,10 @@
-import React from 'react';
-
 const ContactForm = () => {
   return (
-    <div className="inset-x-0 p-10 bg-white lg:absolute">
-      <h1 className="text-2xl text-tango-500">How can we help?</h1>
-      <div className="mt-8 max-w-xl">
+    <div className="inset-x-0 py-5 bg-secondary-grey mp:px-5 sm:p-10 sm:bg-white lg:absolute">
+      <h1 className="text-2xl text-center text-white sm:text-left sm:text-tango-500">
+        How can we help?
+      </h1>
+      <div className="mt-8 w-full">
         <div className="grid grid-cols-1 gap-6">
           <label className="block text-xl text-[#5c5c5c]">
             <select
@@ -45,7 +45,7 @@ const ContactForm = () => {
               placeholder="Message"
             />
           </label>
-          <div className="block">
+          {/* <div className="block">
             <div className="mt-2">
               <div>
                 <label className="inline-flex items-center">
@@ -60,9 +60,9 @@ const ContactForm = () => {
                 </label>
               </div>
             </div>
-          </div>
-          <div className="block font-bold text-white">
-            <button className="block p-2 w-full bg-tango-500 rounded-full shadow-sm hover:bg-amber-500">
+          </div> */}
+          <div className="mb-10 font-bold text-center text-white">
+            <button className="block py-2 px-6 mx-auto w-fit text-base bg-tango-500 rounded-full shadow-sm hover:bg-amber-500">
               Submit
             </button>
           </div>

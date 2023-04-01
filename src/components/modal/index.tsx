@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { FC } from 'react';
 
 import { createPortal } from 'react-dom';
@@ -31,10 +32,12 @@ export const Modal: FC<ModalType> = ({ isOpen, title, children, onClose }) => {
             </div>
             <div className="p-[16px]">{children}</div>
           </div>
-        </div>,
+      </div>,
         portalElement
       )
-    : null;
+    : (
+      <div>sdfjklsdjfkljdkfjkfjksjfksdjfksjfkjkfjkdjfkj</div>
+    );
 };
 
 export default Modal;

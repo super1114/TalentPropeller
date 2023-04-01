@@ -1,16 +1,16 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from "react";
 
-import { Dropdown } from '@nextui-org/React';
+import { Dropdown } from "@nextui-org/React";
 
-import CityMenu from '@/config/citymenu.config';
-import { Jobs } from '@/database/vacancies.json';
+import CityMenu from "@/config/citymenu.config";
+import { Jobs } from "@/database/vacancies.json";
 
-import JobView from './JobView';
+import JobView from "./JobView";
 
 const CurrentVacancies = () => {
   const [jobs, setJobs] = useState<Array<TJobType>>([]);
   const [selectedCity, setSelectedCity] = useState<any>(
-    new Set(['All Locations'])
+    new Set(["All Locations"])
   );
   const locationFilter = useMemo<any>(
     () => Array.from(selectedCity)[0],
@@ -21,7 +21,7 @@ const CurrentVacancies = () => {
 
   const filterJobs = useMemo(() => {
     if (!jobs) return [];
-    if (!locationFilter || locationFilter === 'All Locations') return jobs;
+    if (!locationFilter || locationFilter === "All Locations") return jobs;
     return jobs.filter(({ location }) => location === locationFilter);
   }, [jobs, locationFilter]);
 
@@ -31,14 +31,14 @@ const CurrentVacancies = () => {
   }, []);
 
   return (
-    <div className="items-center py-12 px-24">
-      <div className="flex justify-between">
+    <div className="mp:py-6 mp:px-8">
+      <div className="flex flex-col justify-between items-center sm:flex-row">
         <div>
-          <h1 className="text-4xl">Current Vacancies</h1>
+          <h1 className="mp:text-2xl sm:text-4xl">Current Vacancies</h1>
         </div>
         <div>
           <Dropdown>
-            <Dropdown.Button flat color="primary" css={{ tt: 'capitalize' }}>
+            <Dropdown.Button flat color="primary" css={{ tt: "capitalize" }}>
               {locationFilter}
             </Dropdown.Button>
             <Dropdown.Menu
